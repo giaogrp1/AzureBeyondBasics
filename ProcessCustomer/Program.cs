@@ -19,15 +19,6 @@ namespace ProcessCustomer
             // The following code ensures that the WebJob will be running continuously
             host.RunAndBlock();
         }
-
-
-        public static void ProcessQueueMessage([QueueTrigger("customerqueue")] string message, TextWriter log)
-        {
-            // Processing Logic + send email etc
-            //throw new ApplicationException("oops");, default fail for 5 time, and move to poison queue for further investigation 
-            log.WriteLine(message);
-        }
-    
-
+        
     }
 }
