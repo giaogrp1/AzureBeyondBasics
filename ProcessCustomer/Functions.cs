@@ -16,7 +16,7 @@ namespace ProcessCustomer
         {
             // process logic and may be send a email.
             throw new ApplicationException("oops");
-            //log.WriteLine(message);
+            log.WriteLine(message);
         }
     }
 }
